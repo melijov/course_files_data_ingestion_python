@@ -1,0 +1,37 @@
+Data Scientist Work
+Data Scientists spend the majority of their time acquiring and cleaning data
+1. Acquire Data
+2. Clean Data
+3. Train Model
+4. Evaluate Model
+5. Realize you need more data
+6. Back to 1
+
+Sources of Data
+1. Databases
+2. Log files
+3. Structured files
+4. Services
+5. Computed
+
+Types of Data
+1. Records
+2. Metrics: Matrix
+3. Graphs
+4. Textual
+
+Data Pipeline or Extract, Transform, and Load (ETL)
+Log File -> ETL -> Database
+
+ETL Tasks
+1. Convert
+2. Validate -> Error
+3. Enrich
+4. Missing Data
+
+Final Destination of Data: Data Lakes: A single source for all data
+Example of Data Lakes
+  -Google BigQuery
+  -Relational DB
+  -Spark: Computational Platform
+  
