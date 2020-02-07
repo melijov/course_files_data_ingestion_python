@@ -9,14 +9,14 @@ def parse_timestamp(text):
   return datetime.strptime(text, '%Y-%m-%d %H:%M:%S')
 
 def iter_records(file_name,columns):
-  with bz2.open(file_name,'rt') as fp:
+  with bz2.open(file_name,'rt') as fp:  # read as a text
     reader = csv.DictReader(fp)
     for csv_record in reader:
       record = {}
       for col in columns:
         value = csv_record[col.src]        
         record[col.dest] = col.convert(value)
-      yield record
+      yield record        #using generator to process one line at a time to avoid memory blowout
 
 def print_file(file_name,columns):
   from pprint import pprint
