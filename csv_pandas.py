@@ -20,4 +20,4 @@ def unit_test():
   print_file(fn, tc)
   
   
-if __name__ =='__main__': user_test()
+if __name__ =='__main__': unit_test()
